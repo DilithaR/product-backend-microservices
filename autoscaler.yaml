@@ -1,0 +1,19 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  creationTimestamp: "2022-05-17T17:42:22Z"
+  name: product-ctse
+  namespace: default
+  resourceVersion: "99845"
+  uid: 3fb79535-1d1c-425c-9d63-a162d5c8df26
+spec:
+  maxReplicas: 5
+  minReplicas: 1
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: product-ctse
+  targetCPUUtilizationPercentage: 80
+status:
+  currentReplicas: 0
+  desiredReplicas: 0
