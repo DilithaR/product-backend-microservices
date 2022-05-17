@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-//const userRoute = require('./routes/user.route');
+const userRoute = require('./routes/product.route');
 
 dotenv.config();
 const app = express();
@@ -40,3 +40,4 @@ app.route('/').get((req,res) => {
 app.listen(PORT,()=>{
     console.log(`Server is up and running on port ${PORT}`);
 })
+
