@@ -3,14 +3,11 @@ items:
 - apiVersion: v1
   kind: Service
   metadata:
-    creationTimestamp: "2022-05-17T14:24:25Z"
     labels:
       component: apiserver
       provider: kubernetes
     name: kubernetes
     namespace: default
-    resourceVersion: "207"
-    uid: 580a9de7-4801-4a55-b5c7-82b5c4589b53
   spec:
     clusterIP: 10.61.0.1
     clusterIPs:
@@ -32,15 +29,12 @@ items:
   metadata:
     annotations:
       cloud.google.com/neg: '{"ingress":true}'
-    creationTimestamp: "2022-05-17T14:37:41Z"
     finalizers:
     - service.kubernetes.io/load-balancer-cleanup
     labels:
       app: product-ctse
     name: product-ctse
     namespace: default
-    resourceVersion: "7836"
-    uid: 566925bb-23f7-4f2d-861f-aa5bdbe3f988
   spec:
     clusterIP: 10.61.2.228
     clusterIPs:
